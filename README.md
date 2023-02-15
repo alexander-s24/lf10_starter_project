@@ -96,5 +96,7 @@ Des Weiteren ist der Client mit der Bezeichnung employee-management-service-fron
 
 # Bugs
 
-Trage hier die Features ein, die nicht funktionieren. Beschreibe den jeweiligen Fehler. 
+Trage hier die Features ein, die nicht funktionieren. Beschreibe den jeweiligen Fehler.
 
+Die Seiten können einzeln über den Link aufgerufen werden. Das Problem ist, wenn die Buttons betätigt werden, werden die Verbindungen hergestellt aber die seiten werden nicht geladen.
+Die Buttons Speichern und löschen funktionieren nicht.
