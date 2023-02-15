@@ -6,7 +6,7 @@ export function initializeKeycloak(keycloak: KeycloakService) : () => Promise<bo
         config: {
           url: 'http://keycloak.szut.dev/auth',
           realm: 'szut',
-          clientId: 'lf10_starter_project-frontend'
+          clientId: 'employee-management-service-frontend'
         },
         initOptions: {
           checkLoginIframe: true,
