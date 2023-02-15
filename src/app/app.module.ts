@@ -7,18 +7,22 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { LoginComponent } from './login/login.component';
 import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
 import { initializeKeycloak } from '../app/utility/app.init';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeListComponent,
-    LoginComponent
+    LoginComponent,
+    EmployeeDetailsComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    KeycloakAngularModule
+    KeycloakAngularModule,
+    FormsModule
   ],
   providers: [
     {

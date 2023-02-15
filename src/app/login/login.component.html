@@ -14,7 +14,7 @@
         <form action="">
           <h2>Login</h2>
           <div class="inputbox">  
-            <input type="benutzername" required>
+            <input #username type="benutzername" required id="username" placeholder="Benutzername" class="form-control">
             <span></span>
             <label for="">Benutzername</label>
           </div>
@@ -26,7 +26,8 @@
           <div class="forget">
             <label for=""><input type="checkbox">Remember Me <a href="#">Forget Password</a></label>
           </div>
-          <button> Log in</button>
+          <button type="button" class="btn btn-{{color}} mt-1 mb-3 background_button"
+                (click)="ClickonLogin()">Login</button>
           <div class="register">
             <p>Don't have an account? <a href="#">Register</a></p>
           </div>
