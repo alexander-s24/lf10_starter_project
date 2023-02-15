@@ -1,71 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    .accordion {
-      background-color: #eee;
-      color: #444;
-      cursor: pointer;
-      padding: 18px;
-      width: 50%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 15px;
-      transition: 0.4s;
-    }
-
-    .active, .accordion:hover {
-      background-color: #ccc;
-    }
-
-    .panel {
-      padding: 0 18px;
-      display: none;
-      background-color: white;
-      overflow: hidden;
-    }
-    body {
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-
-<h2>Mitarbeiter Detail Page</h2>
-
-<form>
-  MitarbeiterId:
-  <br> <input type="number" id="id">
-  <br>
-  Vorname:
-  <br> <input type="text" firstname="Firstname">
-  <br>
-  Nachname:
-  <br> <input type="text" lastname="Surname">
-  <br>
-  Email:
-  <br> <input type="email" email="Email">
-  <br>
-  Telefonnummer:
-  <br> <input type="number" telNumber="Telephone-Nr">
-  <br>
-</form>
-<br>
-
-<button onclick="saveData()">Speichern</button>
-<button onclick="window.location.href='http://localhost:53052/employee';">Abbrechen</button>
-<button onclick="deleteThatStuff()">Löschen</button>
-
-<script>
-  function saveData(){
-    //hier muss der Code rein für den Fall das man speichert
-  }
-  function deleteThatStuff(id){
-    //hier muss der Code rein, wenn man löscht
-  }
-</script>
-
-</body>
-</html>
+<h1>LF10-Starter</h1>
+Wenn Sie in der EmployeeListComponent.ts ein gültiges Bearer-Token eintragen, sollten hier die Namen der in der Datenbank gespeicherten Mitarbeiter angezeigt werden!
+<ul>
+  <li *ngFor="let e of employees$ | async">
+    {{e.lastName }}, {{e.firstName}}
+  </li>
+</ul>
